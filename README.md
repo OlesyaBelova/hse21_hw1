@@ -39,6 +39,4 @@
     platanus_assemble -f R1_PE.fastq.trimmed R2_PE.fastq.trimmed 2> ~/Data/Selected/Final/assemble.log  
     platanus scaffold -c out_contig.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 2> ~/Data/Selected/Final/scaffold.log  
     platanus gap_close -c out_scaffold.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 2> ~/Data/Selected/Final/gapclose.log  
-
-
-After.png
+    
