@@ -1,4 +1,0 @@
-Platanus version: 1.2.4
-platanus gap_close -c out_scaffold.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 
-
-Error(1): File open exception!!
