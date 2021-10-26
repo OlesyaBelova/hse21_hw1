@@ -40,4 +40,16 @@
     platanus scaffold -c out_contig.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 2> ~/Data/Selected/Final/scaffold.log  
     platanus gap_close -c out_scaffold.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 2> ~/Data/Selected/Final/gapclose.log  
     
+Проверка качества чтений (до и после подрезания соответственно):  
+До  
+![](Pictures/Before.png)
+После
 ![](Pictures/After.png)
+До  
+![](Pictures/before2.png)
+После  
+![](Pictures/After2.png)
+До  
+![](Pictures/before3.png)
+После  
+![](Pictures/After3.png)
