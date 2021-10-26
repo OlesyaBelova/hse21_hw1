@@ -36,9 +36,9 @@
 Наконец, соберём контиги, скаффолды и подчищенные скаффолды:
 
     mkdir Final  
-    platanus_assemble -f R1_PE.fastq.trimmed R2_PE.fastq.trimmed 2> ~/Data/Selected/Final/assemble.log  
-    platanus scaffold -c out_contig.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 2> ~/Data/Selected/Final/scaffold.log  
-    platanus gap_close -c out_scaffold.fa -IP1 R1_PE.fastq.trimmed R2_PE.fastq.trimmed -OP2 R1_MP.fastq.int_trimmed R1_MP.fastq.int_trimmed 2> ~/Data/Selected/Final/gapclose.log  
+    time platanus assemble -o Poil -t 8 -n 20 -f R1_PE.fastq.trimmed R2_PE.fastq.trimmed 2> ~/Data/Selected/Final/assemble.log  
+    time platanus scaffold -o Poil -t 1 -c Poil_contig.fa -IP1 *.trimmed -OP2 *.int_trimmed 2> ~/Data/Selected/Final/scaffold.log  
+    platanus gap_close -o Poil -t 1 -c Poil_scaffold.fa -IP1 *.trimmed -OP2 *.int_trimmed 2> ~/Data/Selected/Final/gapclose.log
     
 Проверка качества чтений (до и после подрезания соответственно):  
 До  
